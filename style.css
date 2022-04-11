@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap');
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: fuchsia;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: montserrat;
+}
+
+.soon {
+  text-align: center;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.2rem;
+  padding-top: 2rem;
+}
+
+h2.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 15px #ff4da6, 0 0 20px #ff4da6, 0 0 25px #ff4da6;
+  }
+}
